@@ -121,3 +121,31 @@ header .intro p {
   background-color: #ff5555;
   color: white;
 }
+
+/* Arrow to Next Page */
+.arrow-container {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.arrow {
+  font-size: 2.5rem;
+  color: #00aaff;
+  text-decoration: none;
+  transition: transform 0.3s ease, color 0.3s ease;
+  animation: bounce 2s infinite;
+}
+
+.arrow:hover {
+  transform: translateY(-10px);
+  color: #555;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
