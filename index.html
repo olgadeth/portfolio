@@ -1,47 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CFD Simulation of Synovial Fluid Flow</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="portfolio-container">
-    <!-- Header Section -->
-    <div class="header-section">
-      <div class="header-text">
-        <h1>Portf <span>olio</span></h1>
-      </div>
-      <div class="header-image">
-        <img src="images/person.jpg" alt="Portfolio Image">
-      </div>
-    </div>
+    <header>
+        <div class="container">
+            <h1>CFD Simulation of Synovial Fluid Flow in Hip Joint Replacements</h1>
+            <nav>
+                <a href="index.html" class="button">Back to Home</a>
+            </nav>
+        </div>
+    </header>
+    
+    <section id="abstract">
+        <div class="container">
+            <h2>Abstract</h2>
+            <p>
+                Artificial hip joint replacements have transformed orthopaedic care by significantly improving mobility and quality of life. However, challenges like wear particle generation can lead to tissue damage and implant failure. This project leverages Computational Fluid Dynamics (CFD) to model synovial fluid flow in a Tesla valve-integrated acetabular cup. The results demonstrate a novel approach to reducing wear particle accumulation, enhancing implant longevity, and mitigating complications like inflammation.
+            </p>
+        </div>
+    </section>
 
-    <!-- Projects Section -->
-    <div class="projects-section">
-      <div class="text-block">
-        <h2>My latest <span>Projects</span></h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-      </div>
-      <div class="grid-block">
-        <div class="image-item">
-          <img src="images/project1.jpg" alt="Project 1">
+    <section id="methodology">
+        <div class="container">
+            <h2>Methodology</h2>
+            <p>
+                The project utilized <strong>Fusion 360</strong> for designing the acetabular cup with Tesla valve integration and <strong>ANSYS Fluent</strong> for simulating fluid dynamics. The Tesla valve's unidirectional flow properties were analyzed to mitigate backflow and wear particle transport. The methodology involved:
+            </p>
+            <ul>
+                <li>3D modeling of the acetabular cup with Tesla valve integration.</li>
+                <li>Mesh generation with 0.2mm element size, resulting in 233,494 elements.</li>
+                <li>Simulation of synovial fluid flow dynamics, focusing on velocity, pressure, and density distribution.</li>
+                <li>Reversing inlet and outlet conditions to validate the Tesla valve's efficiency in controlling backflow.</li>
+            </ul>
         </div>
-        <div class="image-item">
-          <h2>BOOK</h2>
-        </div>
-        <div class="image-item">
-          <img src="images/project2.jpg" alt="Project 2">
-        </div>
-      </div>
-    </div>
+    </section>
 
-    <!-- Footer Section -->
+    <section id="results">
+        <div class="container">
+            <h2>Results</h2>
+            <p>
+                The CFD simulations revealed the following insights:
+            </p>
+            <ul>
+                <li><strong>Velocity:</strong> High-velocity zones (up to 1.807 m/s) aligned with the Tesla valve's geometry, promoting optimal fluid transport and reducing wear particle residence time.</li>
+                <li><strong>Pressure:</strong> Static pressure distributions highlighted the valve's effectiveness in impeding reverse flow.</li>
+                <li><strong>Density:</strong> Uniform density confirmed incompressible flow behavior, mimicking biological synovial fluid.</li>
+                <li><strong>Streamlines:</strong> Flow trajectories indicated reduced recirculation and stagnation, minimizing particle accumulation.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="discussion">
+        <div class="container">
+            <h2>Discussion</h2>
+            <p>
+                The study demonstrated the Tesla valve's capability to direct fluid flow and restrict backflow, effectively managing wear particle transport in artificial hip joint replacements. High-pressure regions aligned with the valve's design to ensure unidirectional flow, while velocity and density contours validated the implant's performance under physiological conditions.
+            </p>
+            <p>
+                <strong>Challenges:</strong> The complex geometry of the Tesla valve posed computational challenges, and validation against experimental data is needed.
+            </p>
+            <p>
+                <strong>Future Work:</strong> Recommendations include exploring advanced materials for the acetabular cup, conducting dynamic simulations, and progressing to clinical trials.
+            </p>
+        </div>
+    </section>
+
+    <section id="conclusion">
+        <div class="container">
+            <h2>Conclusion</h2>
+            <p>
+                This research highlights the potential of Tesla valve-integrated acetabular cups in enhancing the longevity and efficiency of hip joint replacements. By optimizing wear particle transport, the design addresses a critical limitation in current implants, paving the way for further advancements in biomedical engineering.
+            </p>
+        </div>
+    </section>
+
     <footer>
-      <p>@Studionative © 2022 Studio Native, 3477 Charlestone Road, San Francisco</p>
+        <div class="container">
+            <p>&copy; 2024 Olga Deth. All Rights Reserved. | <a href="mailto:olgu374@gmail.com">olgu374@gmail.com</a></p>
+        </div>
     </footer>
-  </div>
 </body>
 </html>
