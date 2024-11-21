@@ -15,18 +15,46 @@ body {
 /* Main Header Section */
 .main-header {
   text-align: center;
-  padding: 5rem 1rem;
+  padding: 4rem 2rem;
   background: linear-gradient(120deg, #d5e1df, #f5f5f5);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
-.main-header h1 {
+.header-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+/* Profile Picture Styling */
+.profile-picture img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%; /* Circular shape */
+  border: 5px solid #d7e3fc; /* Soft border */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Hover effect */
+}
+
+.profile-picture img:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Glow effect */
+}
+
+/* Text Content Styling */
+.text-content h1 {
   font-family: 'Courier Prime', monospace; /* Elegant monospace font */
   font-size: 3rem;
   font-weight: bold;
   color: #333;
 }
 
-.main-header h2 {
+.text-content h2 {
   font-family: 'Courier Prime', monospace;
   font-size: 1.5rem;
   color: #777;
@@ -90,11 +118,21 @@ body {
 
 /* Responsive Design */
 @media screen and (max-width: 768px) {
-  .main-header h1 {
+  .header-content {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .profile-picture img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .text-content h1 {
     font-size: 2.5rem;
   }
 
-  .main-header h2 {
+  .text-content h2 {
     font-size: 1.2rem;
   }
 
