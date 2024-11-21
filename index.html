@@ -44,6 +44,19 @@
       <a href="#contact" class="btn contact">Contact</a>
       <a href="#about" class="btn about">About</a>
     </section>
+
+    <!-- Arrow to Next Page -->
+    <div class="arrow-container">
+      <a href="nextpage.html" class="arrow">&#8595;</a>
+    </div>
   </div>
+
+  <!-- Optional JavaScript for Interactivity -->
+  <script>
+    document.querySelector('.arrow').addEventListener('click', (e) => {
+      e.preventDefault();
+      window.location.href = "nextpage.html";
+    });
+  </script>
 </body>
 </html>
