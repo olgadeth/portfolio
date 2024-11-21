@@ -141,17 +141,19 @@ body {
   display: none;
 }
 
-.back-to-top:hover {
-  background: #005f8c;
+.btn.back-home {
+  background: #e7e7e7;
+  color: #333;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 600;
+  display: inline-block;
+  margin-bottom: 1rem;
+  transition: background 0.3s ease;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-  .card-header h2 {
-    font-size: 1.5rem;
-  }
-
-  .card-header h3 {
-    font-size: 0.9rem;
-  }
+.btn.back-home:hover {
+  background: #d5d5d5;
 }
