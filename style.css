@@ -1,114 +1,97 @@
 /* General Styles */
 body {
-  font-family: 'Poppins', sans-serif;
-  margin: 0;
-  background-color: #ebe5dc;
-  color: #333;
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    background-color: #f4f4f4;
 }
 
-h1, h2 {
-  font-family: 'Playfair Display', serif;
-  margin: 0;
-  line-height: 1;
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
 }
 
-h1 {
-  font-size: 5rem;
+header {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
 }
 
-h2 {
-  font-size: 2.5rem;
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
 }
 
-/* Portfolio Container */
-.portfolio-container {
-  display: flex;
-  flex-direction: column;
-  gap: 3rem;
-  padding: 2rem;
+header h2 {
+    margin: 5px 0;
+    font-weight: 300;
+    font-size: 1.2em;
 }
 
-/* Header Section */
-.header-section {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  gap: 1rem;
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0 0;
 }
 
-.header-text {
-  text-align: right;
+nav ul li {
+    margin: 0 15px;
 }
 
-.header-text h1 {
-  font-size: 6rem;
-  font-weight: 700;
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
 }
 
-.header-text span {
-  font-size: 6rem;
-  color: #444;
+/* Section Styles */
+section {
+    background: #fff;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.header-image img {
-  width: 100%;
-  border-radius: 10px;
-  object-fit: cover;
+section h2 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
 }
 
-/* Projects Section */
-.projects-section {
-  display: grid;
-  grid-template-columns: 1fr 1.5fr;
-  gap: 2rem;
-  align-items: center;
+.profile-pic, .section-pic {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 10px 0;
+    display: block;
 }
 
-.text-block h2 span {
-  color: #666;
-  font-style: italic;
+ul {
+    list-style: disc;
+    padding-left: 20px;
 }
 
-.text-block p {
-  font-size: 1rem;
-  color: #555;
+a.button {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    background: #333;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
 }
 
-.grid-block {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
+a.button:hover {
+    background: #555;
 }
 
-.image-item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #d6d3ce;
-  border-radius: 5px;
-  height: 200px;
-  position: relative;
-}
-
-.image-item img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 5px;
-}
-
-.image-item h2 {
-  position: absolute;
-  color: #333;
-  font-size: 4rem;
-  font-weight: 700;
-  text-align: center;
-}
-
-/* Footer Section */
 footer {
-  text-align: center;
-  padding: 2rem 0;
-  font-size: 0.9rem;
-  color: #777;
+    text-align: center;
+    padding: 10px;
+    background: #333;
+    color: #fff;
 }
