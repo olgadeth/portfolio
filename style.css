@@ -1,61 +1,64 @@
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f9;
-  margin: 0;
-  padding: 0;
-  color: #333;
-}
-
-header {
-  background-color: #333;
-  color: white;
-  padding: 10px 0;
-  text-align: center;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f9f9f9;
 }
 
 header nav ul {
-  list-style-type: none;
-  padding: 0;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    padding: 1rem;
+    background: #333;
 }
 
 header nav ul li {
-  display: inline;
-  margin: 0 15px;
+    margin: 0 1rem;
 }
 
 header nav ul li a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
+    color: white;
+    text-decoration: none;
 }
 
-section {
-  padding: 20px;
-  margin: 20px;
-  background-color: white;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+.hero {
+    text-align: center;
+    padding: 2rem;
+    background: #eef;
 }
 
-section h1, section h2 {
-  color: #333;
+.hero .button {
+    background: #333;
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+
+.categories, .blog-posts, .featured-blogs {
+    padding: 2rem 1rem;
+}
+
+.category-cards, .post-grid, .featured-grid {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-around;
+}
+
+.card, .post, .featured-post {
+    background: #fff;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 30%;
 }
 
 footer {
-  background-color: #333;
-  color: white;
-  text-align: center;
-  padding: 10px;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-}
-
-ul {
-  list-style-type: square;
-  padding-left: 20px;
-}
-
-ul li {
-  margin: 5px 0;
+    text-align: center;
+    padding: 1rem;
+    background: #333;
+    color: white;
 }
